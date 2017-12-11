@@ -2,6 +2,9 @@
 
 namespace dophpsdk;
 
+/**
+ * dophpsdk\Container
+ */
 class Container {
 
   private $id;
