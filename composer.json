@@ -1,17 +1,22 @@
 {
-    "name": "tplcom/dophpsdk",
-    "description": "A simple docker php sdk.",
-    "type": "library",
-    "homepage": "https://github.com/theodorosploumis/dophpsdk",
-    "require-dev": {
-        "kint-php/kint": "^2.2"
-    },
-    "minimum-stability": "dev",
-    "license": "GPL-2.0+",
-    "authors": [
-        {
-          "name": "TheodorosPloumis",
-          "email": "me@theodorosploumis.com"
-        }
-    ]
+  "name": "tplcom/dophpsdk",
+  "description": "A simple docker php sdk.",
+  "type": "library",
+  "homepage": "https://github.com/theodorosploumis/dophpsdk",
+  "autoload": {
+    "psr-4": {
+        "dophpsdk\\": "src/"
+    }
+  },
+  "require-dev": {
+    "kint-php/kint": "^2.2"
+  },
+  "minimum-stability": "dev",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "TheodorosPloumis",
+      "email": "me@theodorosploumis.com"
+    }
+  ]
 }
