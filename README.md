@@ -10,6 +10,12 @@ Similar projects can be found at https://github.com/theodorosploumis/awesome-doc
 - php
 - composer
 
+Php needs to be able to run docker commands. For example, if using Apache server run this:
+
+```
+usermod -aG docker www-data
+```
+
 ### Installation
 
 ```
@@ -31,8 +37,9 @@ $container = new Container($image);
 
 // Create a new Docker object
 $docker = new Docker();
+
 ```
 
 ### License
 
-GNU v2. See [LICENSE].
+GNU v2. See [LICENSE](https://github.com/theodorosploumis/dophpsdk/blob/master/LICENSE).

@@ -1,7 +1,7 @@
 {
     "name": "tplcom/dophpsdk",
     "description": "A simple docker php sdk.",
-    "type": "project",
+    "type": "library",
     "require-dev": {
         "kint-php/kint": "^2.2"
     },
