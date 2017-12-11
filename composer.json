@@ -1,0 +1,16 @@
+{
+    "name": "theodorosploumis/dophpsdk",
+    "description": "A docker php sdk",
+    "type": "project",
+    "require-dev": {
+        "kint-php/kint": "^2.2"
+    },
+    "minimum-stability": "dev",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "TheodorosPloumis",
+            "email": "me@theodorosploumis.com"
+        }
+    ]
+}
