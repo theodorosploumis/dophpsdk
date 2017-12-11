@@ -28,7 +28,7 @@ class Container {
    * @param string $name | The container name.
    * @param string $hash | A hash used to generate a unique name.
    */
-  public function __construct($image, $id = "", $name = "", $hash = "", $exposedports = [], $command = []) {
+  public function __construct($image, $name, $id = "", $hash = "", $exposedports = [], $command = []) {
     // The docker image. It can use the format [image]:[tag]
     $this->image = $image;
 
@@ -40,13 +40,6 @@ class Container {
       $hash = mt_rand(1000, 9999);
     }
 
-    // Create the name from all the options joined together
-    if ($name) {
-      $name = $hash . "." . $name;
-    }
-    else {
-      $name = "dophpsdk_" . $hash;
-    }
     $name = $this::sanitizeContainerName($name);
     // Add the new name to the object values
     $this->name = $name;
@@ -245,6 +238,11 @@ class Container {
    */
   public function run($command = "", $options = "") {
     $cmd = "docker run -d ";
+
+    if ($this->name) {
+      $cmd .= "--name " . $this->name;
+    }
+
     $cmd .= " " . $options;
     $cmd .= " " . $this->getImage();
 
