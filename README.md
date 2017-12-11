@@ -27,6 +27,8 @@ composer require tplcom/dophpsdk
 ```
 <?php
 
+require_once __DIR__ . "/vendor/autoload.php";
+
 use dophpsdk\Docker;
 use dophpsdk\Container;
 

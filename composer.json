@@ -2,6 +2,7 @@
     "name": "tplcom/dophpsdk",
     "description": "A simple docker php sdk.",
     "type": "library",
+    "homepage": "https://github.com/theodorosploumis/dophpsdk",
     "require-dev": {
         "kint-php/kint": "^2.2"
     },
