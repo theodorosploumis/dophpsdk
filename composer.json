@@ -1,6 +1,6 @@
 {
-    "name": "theodorosploumis/dophpsdk",
-    "description": "A docker php sdk",
+    "name": "tplcom/dophpsdk",
+    "description": "A simple docker php sdk.",
     "type": "project",
     "require-dev": {
         "kint-php/kint": "^2.2"
@@ -9,8 +9,8 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "TheodorosPloumis",
-            "email": "me@theodorosploumis.com"
+          "name": "TheodorosPloumis",
+          "email": "me@theodorosploumis.com"
         }
     ]
 }
