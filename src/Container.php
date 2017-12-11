@@ -243,15 +243,15 @@ class Container {
    * @param string $command
    * @param string $options
    */
-  public function run($command, $options = "") {
-    if ($command) {
-      $this->command = $command;
-    }
-
+  public function run($command = "", $options = "") {
     $cmd = "docker run -d ";
     $cmd .= " " . $options;
     $cmd .= " " . $this->getImage();
-    $cmd .= " /bin/sh -c " . $command;
+
+    if ($command) {
+      $this->command = $command;
+      $cmd .= " /bin/sh -c " . $command;
+    }
 
     exec($cmd, $result);
 
