@@ -5,13 +5,14 @@
   "homepage": "https://github.com/theodorosploumis/dophpsdk",
   "autoload": {
     "psr-4": {
-        "dophpsdk\\": "src/"
+      "dophpsdk\\": "src/"
     }
   },
   "require-dev": {
     "kint-php/kint": "^2.2"
   },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "GPL-2.0+",
   "authors": [
     {
